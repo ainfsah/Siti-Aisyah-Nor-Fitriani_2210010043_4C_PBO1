@@ -17,7 +17,7 @@ Unutk outputnya aplikais mengoutput informasi mobil, hasil filter, pesan kesalha
 
 Aplikasi ini mengimplementasikan beberapa konsep penting dalam pemrograman berorientasi objek (OOP) seperti Class, Object, Atribut, Method Constructor, Method Mutator, Method Accessor, Encapsulation, Inheritance, Overloading, Overriding, Seleksi, Perulangan, IO Sederhana, Array, dan Error Handling.
 
-##************************************************************
+## ************************************************************
 ## Penjelasan Kode
 
 Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
@@ -413,4 +413,5 @@ try {
 ## Pembuat
 
 Nama   : Siti AIsyah Nor Fitriani
+
 NPM    :  2210010043
