@@ -1,10 +1,19 @@
 # Proyek Akhir Pemrograman Berbasis Objek 1
 
-Proyek ini adalah contoh sederhana aplikasi pengolahan data mahasiswa menggunakan Java sebagai tugas akhir dari mata kuliah pemrograman berbasis objek 1.
+Proyek ini adalah contoh sederhana aplikasi pengolahan data informasi showroom Mobil menggunakan Java sebagai tugas akhir dari mata kuliah pemrograman berbasis objek 1.
 
 ## Deskripsi
-
-Aplikasi ini menerima input berupa nama dan NPM mahasiswa, dan memberikan output berupa informasi detail dari NPM tersebut seperti tahun masuk, fakultas, program studi, dan nomor registrasi.
+Aplikasi yang saya buat dengan menggunakan bahasa pemrogramman java ini adalah aplikasi "SHowroom Mobil" .
+Aplikasi Showroom Mobil ini adlaah aplikasi dengan sistem sederhana dimana unutk membuatu showroom mobil dalam mengelola dan menampilkan informasi mengenai stok mobil yang tersedia.
+Aplikasi ini memiliki beberap fitur yaitu seperti pengeleolaan data mobil, penampilan informasi mobil, serta fitur untuk memfilter berdasarkan ketersediaan dan tahun produksi mobil, dimana fitur ini sangat memudahkan pelanggan untuk
+mempertimbangkan pilihannya.
+Cara kerja pada aplikasi ini adalah yang pertama-tama informasi mengenai mobil yang telah di inisialisasikan akan ditampilkan. kemudian informasi mobil yang telah di inisialisasikan juga dapat di perbahrui menggunakan fitur yang tersedia pada aplikasi ini.
+Lalu apabila hanya ingin menampilkan atau melihat beberapa atribut saja dari data yang di inisalisasikan maka aplikasi ini juga menyediakan opsi untuk menampilkan beberapa atribut tersebut.
+Kemudian yang terakhir aplikasi menyediakan kemudahan dengan fitur pilihan sederhana, dimana setelah menambahkan data para pelanggan dapat memfilter data tersebut sesuai ketersediaan da tahun produksinya.
+Aplikais ini menggunakan metode input untuk inisialiasi Data mobil seperti input merk,nama,model,tahun,stok,harga, dan status ketersediaan, kemudian juga aplikasi ini juga menggunakan sistem input untuk pemilihan filter menggunakan terminal dimana 
+dapat mnerima perintah. KMeudian input yang terakhir adalah aplikais ini menginput validasi iinput dimana untuk memastikan bahwa nilai yang dimasukkan sudah benar sesuai dengan format. 
+Unutk outputnya aplikais mengoutput informasi mobil, hasil filter, pesan kesalhan, inrommasi keluar.
+.
 
 Aplikasi ini mengimplementasikan beberapa konsep penting dalam pemrograman berorientasi objek (OOP) seperti Class, Object, Atribut, Method Constructor, Method Mutator, Method Accessor, Encapsulation, Inheritance, Overloading, Overriding, Seleksi, Perulangan, IO Sederhana, Array, dan Error Handling.
 
@@ -20,7 +29,7 @@ Berikut adalah bagian kode yang relevan dengan konsep OOP yang dijelaskan:
 public class SuperShowroom {
     ...
 }
->>>class SuperShowroom ini merupakan kelas dasar atau super class pada projek saya yang digunakan untuk mewakili atribut dan method-method umum yang saya gunakan
+>>>class SuperShowroom ini merupakan class dasar atau super class pada projek saya yang digunakan untuk mewakili atribut dan method-method umum yang saya gunakan
 untuk berbagai tipe showrom,dimana pada class ini bisa juga disebut sebagai kerangka dasarnya untuk mengelola dimana berbagai operasi dari method method seperti
 mutator, konstruktor, accesor, untuk menampilkan dan juga method untuk memfilter / seleksi <<<
 
@@ -78,6 +87,7 @@ ublic class subShowroomVip extends SuperShowroom{
     public String FiturSpesial; >>> terdapat atribut fiturSpesial dengan tipe data String, berarti atribut ini akan menyimpan teks.
 ```
 
+## *************************************************************
 4. **Constructor** adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class `SuperShowroom` dan `SubShoroom`.
 
 ```bash
@@ -99,6 +109,7 @@ public subShowroomVip (String Merk, String Nama,String Model, int Tahun, int Sto
         this.FiturSpesial="Gratis cek mesin mobil selama 6 ";
 ```
 
+## ***********************************************************
 5. **Mutator** atau setter digunakan untuk mengubah nilai dari suatu atribut.
    Pada kode ini dibawh ini adalah contoh dari mutator atau penggunaan setter :
 ```bash
@@ -125,6 +136,7 @@ public void setMerk(String merk) {
     }
 ```
 
+## ***********************************************************
 6. **Accessor** atau getter digunakan untuk mengambil nilai dari beberapa atribut saja.
     Pada kode ini contoh method accessor seperti dibawh ini :
 
@@ -153,12 +165,14 @@ public String getMerk() {
 }
 ```
 
+## ***********************************************************
 7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut menjadi private dan hanya bisa diakses melalui method. Pada kode ini, atribut `Merk`, 'Nama' dan `Model` dienkapsulasi dan hanya bisa diakses melalui method getter dan setter.
 
 ```bash
- private String Merk, Nama,Model;            >>> pada bagian ini atribut Merk, Nama dan model menjadi private dimana hnaya dapat di acces pada class tersebu atau memlaui method yang ada di class ini.
+ private String Merk, Nama,Model;            >>> pada bagian ini atribut Merk, Nama dan model menjadi private dimana hnaya dapat di akses pada class tersebut atau memlaui method yang ada di class ini.
 ```
 
+## ***********************************************************
 8. **Inheritance** adalah konsep di mana sebuah class bisa mewarisi property dan method dari class lain. Pada kode ini, `MahasiswaDetail` mewarisi `Mahasiswa` dengan sintaks `extends`.
 
 ```bash
@@ -171,6 +185,7 @@ ublic class subShowroomVip extends SuperShowroom{                               
 }
 ```
 
+## ***********************************************************
 9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi,
    polymorphis pada kode ini diterapkan dengan menggunakan method 'Show()' yang di ditimpa diclass SubShowroomVip yang sbeelumnya telah di buat atau didefinisikan di class Super Shoroom.
    polymorphism bisa berbentuk Overloading ataupun Overriding.  pada kode ini menggunakan Overriding .
@@ -195,6 +210,7 @@ public void show() {    >>>>> metode 'show()' yang akan di override
     }
 ```
 
+## ***********************************************************
 10. **Seleksi** adalah statement kontrol yang digunakan untuk membuat keputusan berdasarkan kondisi.
     Pada kode ini, digunakan seleksi `if else` dan 'switch case'.
     dimamna program memungkin untuk memilih opsi dengan menggunakan swith case berdasarkan nilai yang di input dan menggunakan method seleksi ' if else'.
@@ -264,6 +280,7 @@ public String getProdi() {
 }
 ```
 
+## ***********************************************************
 11. **Perulangan** adalah statement kontrol yang digunakan untuk menjalankan blok kode berulang kali. Pada kode ini, digunakan loop `while` untuk meminta input dan menampilkan data menu terus menerus sampai
     pengguna mmeilih unutk keluar dair program. ibaratnya menu akn terus muncuk setiap  akhir proses untuk menmapilkan secara berulang.
 
@@ -276,6 +293,7 @@ while (true) {
 }
 ```
 
+## ***********************************************************
 12. **Input Output Sederhana** digunakan untuk menerima input dari user dan menampilkan output ke user.
 pada kode ini dimana objek scanner meminta input dari pengguna. Pengguna diminta untuk memilih opsi filter 
 berdasarkan ketersediaan atau tahun, atau keluar dari program.
@@ -311,6 +329,7 @@ case 2 -> {
                                 tampilkanMobil(hasilTahun);
 ```
 
+## ***********************************************************
 13. **Array** adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel.
     pada kode ini Array MobilReady merupakan sebuah ArrayList yang berisi objek-objek SuperShowroom. 
     Setiap elemen dalam ArrayList ini diisi dengan menggunakan konstruktor dari kelas 
@@ -329,6 +348,7 @@ case 2 -> {
         MobilReady.add(new SuperShowroom("Daihatsu", "Grand Max", "1.5 S", 2020, 4, 220450000.0, true));
 ```
 
+## ***********************************************************
 14. **Error Handling** digunakan untuk menangani error yang mungkin terjadi saat runtime. Pada kode ini, digunakan `try catch` untuk menangani error.
 
 ```bash
